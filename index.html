@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>বাংলা কুইজ অ্যাপ</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<select id="levelSelect">
+  <option value="all">সব প্রশ্ন</option>
+  <option value="easy">Easy</option>
+  <option value="medium">Medium</option>
+  <option value="hard">Hard</option>
+</select>
+
+  <div class="theme-toggle">
+    <label>
+      🌙 ডার্ক মোড:
+      <input type="checkbox" id="darkModeToggle" />
+    </label>
+  </div>
+  <div class="main-container">
+    <div class="quiz-container">
+      <div class="header">
+        <button id="langToggle">🌐 ভাষা: বাংলা</button>
+        <h1>🧠 বাংলা কুইজ অ্যাপ</h1>
+        <div>🔥 সর্বোচ্চ স্কোর: <span id="highScore">0</span></div>
+      </div>
+      <div class="quiz-box">
+        <div id="timer">⏱️ 10s</div>
+        <div id="question" class="question">প্রশ্ন</div>
+        <div id="options" class="options"></div>
+        <button id="nextBtn" onclick="nextQuestion()">পরবর্তী</button>
+        <div id="result" class="result"></div>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
